@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+
+  <section>
+    <div class="backgroundTop">
+      <div class="cardZero">
+        <div>
+          <p id="code">000</p>
+        </div>
+        
+      </div>
+      <div class="cardOne">
+        <img class="cardOneIcon" src="./images/card-logo.svg" alt="">
+        <div class="cardOnetextContent">
+          <p id="cardNumbers" class="cardOnetextContentNumbers">0000 0000 0000 0000</p>
+          <div>
+            <p id="cardName">Jane Appleseed</p>
+            <div class="dateDiv">
+              <p id="mm">00</p>
+              <p>/</p>
+              <p id="yy">00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="backgroundBottom" class="backgroundBottom">
+      <div class="inputName">
+        <label for="inputNameBox" class="inputNameText">Cardholder Name</label>
+        <input name="inputNameBox" id="inputNameBox" class="inputNameBox" type="text" placeholder="e.g. Jane Appleseed" maxlength="30">
+        <div id="errorName"></div>
+      </div>
+
+      <div class="inputNumber">
+        <label for="inputNumberBox" class="inputNumberText">Card Number</label>
+        <input id="inputNumberBox" name="inputNumberBox" class="inputNumberBox" type="text" placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
+        <div id="errorNumber"></div>
+      </div>
+
+      <div class="expDateSection">
+        <div class="expDateSectionOne">
+            <div class="expDate">
+              <label for="expDateNumber" class="expDateText">Exp. Date</label>
+              <input id="mmInput" name="expDateNumber" class="expDateNumber" type="text" placeholder="MM" maxlength="2">
+              <div id="mmError"></div>
+          </div>
+
+          <div class="expDate">
+            <label for="expDateNumber" class="expDateText">(MM/YY)</label>
+            <input id="yyInput" name="expDateNumber" class="expDateNumber" type="text" placeholder="YY" maxlength="2">
+            <div id="yyError"></div>
+          </div>
+        </div>
+
+        <div class="expDate">
+          <label for="expDateCode" class="expDateText">CVC</label>
+          <input id="codeInput" name="expDateCode" class="expDateCode" type="text" placeholder="e.g. 123" maxlength="3">
+          <div id="codeError"></div>
+        </div>
+      
+    </div>
+
+      <button type="submit" id="btnConfirm" class="btnConfirm">Confirm</button>
+    </div>
+
+    <div id="confirmStateMob" class="confirmStateMob">
+      <img class="imgConfir" src="./images/icon-complete.svg">
+      <p class="confirmStateThank">Thank you!</p>
+      <p class="confirmStateTxt">We've added your card details</p>
+      <button id="confirmStateBtn" class="confirmStateBtn">Continue</button>
+  </div>
+    
+  </section>
+  
+
+
+  <!-- Completed state start -->
+
+  
+  
+  
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+/* 'Space Grotesk', sans-serif; 500 */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+:root {
+    /* --color : linear-gradient(hsl(249, 99%, 64%) to hsl(278, 94%, 30%)); */
+
+    /* input error */
+    --red: hsl(0, 100%, 66%);
+
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 3%, 87%);
+    --dark-grayish-violet: hsl(279, 6%, 55%);
+    --very-dark-violet: hsl(278, 68%, 11%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;;
+    font-size: 18px;
+}
+
+section {
+    height: 640px;
+    width: auto;
+}
+
+.backgroundTop {
+    height: 240px;
+    width: 100%;
+    background-image: url(../images/bg-main-mobile.png);
+    background-size: cover;
+    position: relative;
+}
+
+.cardZero, .cardOne {
+    height: 155px;
+    width: 285px;
+    background-size: cover;
+    position: absolute;
+}
+
+.cardZero {
+    background-image: url(../images/bg-card-back.png);
+    right: 20px;
+    top: 32px;
+}
+
+.cardZero div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.cardZero p {
+    color: var(--white);
+    font-size: 10px;
+    letter-spacing: 2px;
+    position: absolute;
+    right: 30px;
+    top: 70px;
+}
+
+.cardOne {
+    background-image: url(../images/bg-card-front.png);
+    left: 20px;
+    bottom: -35px;
+}
+
+.cardOneIcon {
+    margin: 20px;
+    height: 35px;
+    width: auto;
+}
+
+.cardOnetextContentNumbers {
+    color: var(--white);
+    text-align: center;
+    letter-spacing: 2.5px;
+}
+
+.cardOnetextContent div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.backgroundBottom {
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputName, .inputNumber, .expDate {
+    width: 90%;
+    margin: 10px 0;
+}
+
+.inputNameText, .inputNumberText, .expDateText {
+    color: var(--very-dark-violet);
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.inputNameBox, .inputNumberBox {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid var(--light-grayish-violet);
+}
+
+.expDateSection {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.expDateSectionOne {
+    display: flex;
+}
+
+.expDate {
+    width: 100%;
+}
+
+.expDateText {
+    width: 90px;
+}
+
+.expDateNumber {
+    height: 40px;
+    width: 85%;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid var(--light-grayish-violet);
+}
+
+.expDateCode {
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--light-grayish-violet);
+    padding-left: 10px;
+}
+
+.btnConfirm, .confirmStateBtn {
+    width: 90%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--very-dark-violet);
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Estado de confirmación */
+
+.confirmStateMob {
+    display: none;
+    margin-top: 60px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgConfir {
+    margin-top: 15px;
+}
+
+.confirmStateThank {
+    text-transform: uppercase;
+    color: var(--very-dark-violet);
+    font-size: 24px;
+    letter-spacing: 2.6px;
+    margin: 10px 0;
+}
+
+.confirmStateTxt {
+    color: var(--dark-grayish-violet);
+    margin: 10px 0;
+}
+
+.confirmStateBtn {
+    margin: 20px 0;
+    width: 19rem;
+}
+
+#errorNumber, #errorName, #mmError, #yyError, #codeError {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* .dateDiv {
+    margin: 0;
+} */
+
+
+@media screen and (min-width: 1080) {
+    
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
