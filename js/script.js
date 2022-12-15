@@ -104,8 +104,8 @@ btnConfirm.addEventListener("click", () => {
     } else {
         testExpDate(mmInput.value, 1, 12, mmError);
         if (mmInput.value.length === 1) {
-            let numConCero = mmInput.value = 0 + mmInput.value
-            mm.innerHTML = numConCero
+            let numWithZero = mmInput.value = 0 + mmInput.value
+            mm.innerHTML = numWithZero;
         } else {
             mmValidation = true;
         }
@@ -114,8 +114,8 @@ btnConfirm.addEventListener("click", () => {
     
     if (!yyInput.value) {
         yyError.innerText = "Completar campo"
-        testExpDate(yyInput.value, 22, 30, yyError);
     } else {
+        testExpDate(yyInput.value, 22, 30, yyError);
         yyValidation = true;
     }
     
