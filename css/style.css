@@ -22,11 +22,15 @@
 body {
     font-family: 'Space Grotesk', sans-serif;;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
 }
 
 section {
     height: 640px;
     width: auto;
+    max-width: 420px;
+    min-width: 375px;
 }
 
 .backgroundTop {
@@ -208,10 +212,25 @@ section {
     margin-top: 4px;
 }
 
-/* .dateDiv {
-    margin: 0;
-} */
+.finishDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.finishTitle {
+    margin-top: 25px;
+    font-size: 24px;
+    letter-spacing: 5px;
+    color: var(--very-dark-violet);
+}
+
+.finishText {
+    color: var(--dark-grayish-violet);
+    font-size: 18px;
+    margin-top: 20px;
+}
 
 @media screen and (min-width: 1080) {
     
