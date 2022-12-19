@@ -232,7 +232,7 @@ section {
     margin-top: 20px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
     body {
         justify-content: start;
     }
@@ -253,7 +253,7 @@ section {
         position: relative;
         top: calc(50% - 170px);
         margin: 0 0 0 250px;
-        width: 1000px;
+        width: 650px;
         max-height: calc(100vh - 200px);
     }
 
